@@ -3,12 +3,13 @@
 
 reference: https://github.com/weiaicunzai/blender_shapenet_render
 """
+import os
 import sys
 sys.path.append('./')
 from data_config import our_categories, shapenet_normalized_path, shapenet_categlory_pair, model_view_path
 
 g_shapenet_path = shapenet_normalized_path
-g_blender_excutable_path = '/home/ynie/Software/blender-2.79b-linux-glibc219-x86_64/blender'
+g_blender_excutable_path = os.environ.get('g_blender_excutable_path')
 
 #if you have multiple viewpoint files, add to the dict
 #files contains azimuth,elevation,tilt angles and distance for each row
