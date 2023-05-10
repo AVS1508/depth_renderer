@@ -1,0 +1,4 @@
+services:
+    depth_renderer:
+        build:
+            context: .
